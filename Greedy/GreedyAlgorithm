@@ -1,0 +1,7 @@
+ Greedy algorithms work on problems for which it is true that, at every step, there is a choice that is optimal for the problem up to that step, 
+ and after the last step, the algorithm produces the optimal solution of the complete problem.
+
+To make a greedy algorithm, identify an optimal substructure or subproblem in the problem.
+Then, determine what the solution will include (for example, the largest sum, the shortest path, etc.).
+Create some sort of iterative way to go through all of the subproblems and build a solution.
+
