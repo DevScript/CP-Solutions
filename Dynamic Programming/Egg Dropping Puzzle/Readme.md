@@ -36,3 +36,41 @@ In this approach, we work on the same idea as described above neglecting the cas
 
 Formally for filling DP[i][j] state where ‘i’ is the number of eggs and ‘j’ is the number of floors:
    - We have to traverse for each floor ‘x’ from ‘1’ to ‘j’ and find minimum of : (1 + max( DP[i-1][j-1], DP[i][j-x] )).
+   
+### Simulation :
+    i => Number of eggs
+    j => Number of floors
+    Look up find maximum
+    Lets fill the table for the following case:
+    Floors = ‘4’
+    Eggs = ‘2’
+
+    1 2 3 4
+
+    1 2 3 4 => 1
+
+    1 2 2 3 => 2
+
+    For ‘egg-1’ each case is the base case so the
+    number of attempts is equal to floor number.
+
+    For ‘egg-2’ it will take ‘1’ attempt for 1st
+    floor which is base case.
+
+    For floor-2 =>
+    Taking 1st floor 1 + max(0, DP[1][1])
+    Taking 2nd floor 1 + max(DP[1][1], 0)
+    DP[2][2] = min(1 + max(0, DP[1][1]), 1 + max(DP[1][1], 0))
+    
+    For floor-3 =>
+    Taking 1st floor 1 + max(0, DP[2][2])
+    Taking 2nd floor 1 + max(DP[1][1], DP[2][1])
+    Taking 3rd floor 1 + max(0, DP[2][2])
+    DP[2][3]= min(‘all three floors’) = 2
+
+    For floor-4 =>
+    Taking 1st floor 1 + max(0, DP[2][3])
+    Taking 2nd floor 1 + max(DP[1][1], DP[2][2])
+    Taking 3rd floor 1 + max(DP[1][2], DP[2][1])
+    Taking 4th floor 1 + max(0, DP[2][3])
+    DP[2][4]= min(‘all four floors’) = 3
