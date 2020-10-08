@@ -82,5 +82,5 @@ Formally for filling DP[i][j] state where ‘i’ is the number of eggs and ‘j
    - Auxiliary Space: O(n*k).
      As a 2-D array of size 'n*k' is used for storing elements.
  ## Solution :
-   - [C++](Egg Dropping Puzzle.cpp)
-   - [Java](Egg Dropping Puzzle.java)
+   - [C++](Egg_Dropping_Puzzle.cpp)
+   - [Java](Egg_Dropping_Puzzle.java)
