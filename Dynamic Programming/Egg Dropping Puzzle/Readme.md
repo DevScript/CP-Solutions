@@ -31,4 +31,8 @@ For more description on this problem see [wiki page](https://en.wikipedia.org/wi
        Input:  N = 3, K = 5
        Output: 3
        
-## Explanation:
+## Dynamic Programming Solution:
+In this approach, we work on the same idea as described above neglecting the case of calculating the answers to sub-problems again and again.. The approach will be to make a table which will store the results of sub-problems so that to solve a sub-problem, it would only require a look-up from the table which will take constant time, which earlier took exponential time.
+
+Formally for filling DP[i][j] state where ‘i’ is the number of eggs and ‘j’ is the number of floors:
+   - We have to traverse for each floor ‘x’ from ‘1’ to ‘j’ and find minimum of : (1 + max( DP[i-1][j-1], DP[i][j-x] )).
