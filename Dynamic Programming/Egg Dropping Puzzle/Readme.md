@@ -21,9 +21,14 @@ For more description on this problem see [wiki page](https://en.wikipedia.org/wi
         
 ## Example :
    ### Case 1:
+       Input N=2, K=2
+       Output: 2
+   ### Case 2:
        Input:  N = 2, K = 10
        Output: 4
        
-   ### Case 2:
+   ### Case 3:
        Input:  N = 3, K = 5
        Output: 3
+       
+## Explanation:
