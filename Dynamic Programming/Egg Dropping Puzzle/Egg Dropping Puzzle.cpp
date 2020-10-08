@@ -32,17 +32,16 @@ int res(int n, int f)
             } 
         } 
     } 
-  
-    
+     
     return dp[n][f]; 
 } 
 
 
 int main() {
     
-    	int n = 2;
-
-		int f = 10;
+    	int n,f;
+	cin>>n;
+	cin>>f;
     	cout<<res(n, f);
     	
     	return 0;
