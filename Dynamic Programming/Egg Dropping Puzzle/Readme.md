@@ -80,4 +80,4 @@ Formally for filling DP[i][j] state where ‘i’ is the number of eggs and ‘j
      Where ‘n’ is the number of eggs and ‘k’ is the number of floors, as we use a nested for loop ‘k^2’ times for each egg
      
    - Auxiliary Space: O(n*k).
-     As a 2-D array of size ‘n*k’ is used for storing elements.
+     As a 2-D array of size n*k is used for storing elements.
