@@ -74,3 +74,10 @@ Formally for filling DP[i][j] state where ‘i’ is the number of eggs and ‘j
     Taking 3rd floor 1 + max(DP[1][2], DP[2][1])
     Taking 4th floor 1 + max(0, DP[2][3])
     DP[2][4]= min(‘all four floors’) = 3
+    
+ ## Complexity :
+   - Time Complexity: O(n*k^2).
+     Where ‘n’ is the number of eggs and ‘k’ is the number of floors, as we use a nested for loop ‘k^2’ times for each egg
+     
+   - Auxiliary Space: O(n*k).
+     As a 2-D array of size ‘n*k’ is used for storing elements.
